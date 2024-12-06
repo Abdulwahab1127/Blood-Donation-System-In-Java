@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.userinterface.HomePage_Controller">
+   <children>
+      <AnchorPane prefHeight="465.0" prefWidth="771.0">
+         <children>
+            <Text fill="#900d0d" fontSmoothingType="LCD" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Donation System">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="donorDetail" layoutX="147.0" layoutY="193.0" mnemonicParsing="false" onAction="#DonorDetails" prefHeight="71.0" prefWidth="159.0" style="-fx-background-color: #900d0d;" text="Are You Donor?" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="recipientDetails" layoutX="465.0" layoutY="193.0" mnemonicParsing="false" onAction="#GoToReci" prefHeight="71.0" prefWidth="159.0" style="-fx-background-color: #900d0d;" text="Are You Recipient?" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#900d0d" fontSmoothingType="LCD" layoutX="643.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome User!">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="ClickExit" layoutX="324.0" layoutY="379.0" mnemonicParsing="false" onAction="#ExitMethod" prefHeight="32.0" prefWidth="123.0" style="-fx-background-color: #900d0d;" text="Click To Exit" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Accordion />
+   </children>
+</VBox>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.userinterface.onRecipient">
+   <children>
+      <AnchorPane prefHeight="465.0" prefWidth="771.0">
+         <children>
+            <Text fill="#900d0d" fontSmoothingType="LCD" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Donation System">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#900d0d" fontSmoothingType="LCD" layoutX="303.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipient Details">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#900d0d" fontSmoothingType="LCD" layoutX="171.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BloodType :">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="bloodType" layoutX="243.0" layoutY="141.0" prefHeight="25.0" prefWidth="285.0" promptText="Enter Your BloodType... " />
+            <Text fill="#900d0d" fontSmoothingType="LCD" layoutX="159.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Bottles :">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="bottles" layoutX="243.0" layoutY="195.0" prefHeight="25.0" prefWidth="285.0" promptText="How Many Bottles You Need? " />
+            <ComboBox fx:id="area" layoutX="243.0" layoutY="246.0" prefHeight="25.0" prefWidth="285.0" promptText="Select Your Area" />
+            <Text fill="#900d0d" fontSmoothingType="LCD" layoutX="201.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Area :">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#900d0d" fontSmoothingType="LCD" layoutX="243.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Need Blood Urgently?">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="UrgentYes" layoutX="423.0" layoutY="297.0" mnemonicParsing="false" text="Yes" textFill="#900d0d" />
+            <RadioButton fx:id="UrgentNo" layoutX="481.0" layoutY="297.0" mnemonicParsing="false" text="No" textFill="#900d0d" />
+            <Button fx:id="ReciDetailEnter" layoutX="318.0" layoutY="356.0" mnemonicParsing="false" onAction="#RecipientDetails" prefHeight="25.0" prefWidth="135.0" text="Enter" textFill="#900d0d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Accordion />
+   </children>
+</VBox>
